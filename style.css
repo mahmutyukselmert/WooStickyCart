@@ -1,0 +1,46 @@
+.add-to-cart-bottom {
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	border-radius: 0;
+	width: 100%;
+	right: 0;
+	background: #323232;
+	color: #fff;
+	height: 40px;
+	padding: 0;
+	box-shadow: 0 -2px 0px 0 #ffbf2c;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.add-to-cart-bottom button { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 24px 24px;
+	margin: -32px auto;
+	padding: 6px;
+	border: 0;
+	cursor: pointer;
+	flex-direction: column;
+	transition: all 250ms ease-out;
+}
+.add-to-cart-bottom button:focus {
+	outline: 0;
+}
+.add-to-cart-bottom button:hover {
+	transform: scale(1.1);
+	box-shadow: 0px 1px 3px #ffbf2d;
+}
+.add-to-cart-bottom button span {
+	color: #fff;
+	position: relative;
+}
+.add-to-cart-bottom button svg {
+	color: #323232;
+	width: 36px;
+	height: 36px;
+	transform: scale(0.90);
+}
