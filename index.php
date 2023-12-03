@@ -105,7 +105,7 @@ function wsc_cart_text_callback() {
 function wsc_cart_custom_css_callback() {
 	$wsc_custom_css = file_get_contents(plugin_dir_path(__FILE__) . 'style.css');
     echo '<div style="height: 500px; width: 100%;" id="wsc-code-editor">'. $wsc_custom_css . '</div>';
-    echo '<textarea name="custom_css" id="custom_css_textarea"></textarea>';
+    echo '<textarea name="custom_css" id="custom_css_textarea" style="display: none;"></textarea>';
     ?>
     <script>
         jQuery(document).ready(function() {
