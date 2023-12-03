@@ -119,34 +119,6 @@ function wsc_cart_custom_css_callback() {
                 jQuery('#custom_css_textarea').val(cssContent);
             }, 1);
         });
-
-        /* Development .
-            jQuery('#wsc-code-editor').on('change input keypress keydown keyup', function() {
-                var cssContent = editor.getValue();
-                jQuery.ajax({
-                    url: ajaxurl, 
-                    type: 'POST',
-                    data: {
-                        action: 'save_custom_css',
-                        custom_css: cssContent
-                    },
-                    success: function(response) {
-                        console.log('CSS başarıyla kaydedildi!');
-                    }
-                });
-            });
-        */
     </script>
     <?php
 }
-
-/* Development.
-add_action('wp_ajax_save_custom_css', 'save_custom_css_callback');
-function save_custom_css_callback() {
-    if (isset($_POST['custom_css'])) {
-        $custom_css = wp_strip_all_tags($_POST['custom_css']);
-        file_put_contents(plugin_dir_path(__FILE__) . 'style.css', $custom_css);
-        wp_die();
-    }
-}
-*/
