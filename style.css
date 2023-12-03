@@ -16,6 +16,7 @@
 	flex-direction: column;
 }
 .add-to-cart-bottom button { 
+	background: #ffbf2c;
 	display: flex;
 	justify-content: center;
 	align-items: center;
